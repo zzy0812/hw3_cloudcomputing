@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>upload file</title>
+	<script type="text/javascript" src="fileupload.js"></script>
+
+	 <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <!-- </script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+	<script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="apigClient.js"></script>
+
+
+</head>
+<body>
+
+<label for="imageupload">Choose an image file to upload:</label>
+
+<div>
+	<!-- <input type="file"
+       id="image_upload" name="image to upload"
+       accept="image/png, image/jpeg">
+        -->
+        <!--  -->
+    
+    <form id="uploadbanner" action='#' onsubmit="return false;" enctype="multipart/form-data" method="post">
+        <input id="fileupload" name="myfile" type="file" />
+        <input type="submit" value="submit" id="submit" />
+
+    </form>
+    <div id="upload_success_area">
+    </div>
+    <br>
+
+
+    <label for="search">Enter the keyword(s) you want to search for:</label>
+    <form  onsubmit="return false;" id="qery">
+
+        <input id="q" placeholder="search query" type="text" name="q"/>
+        <input type='submit' value="submit" id="submitq"/>
+    </form>
+    <br>
+   
+    <div id="image_display">
+        <!-- <img src="https://s3.amazonaws.com/photoalbumcc/photo-1542841791-3f32162641bc.jpg" alt="Trulli"> -->
+    </div>
+
+</div>
+
+
+
+
+</body>
+</html>
